@@ -49,7 +49,7 @@ for (i in 1:30){
 
 	x<-alldatas[alldatas$subject==i & as.numeric(alldatas$activity)==j, ]
 	y<-as.data.frame(lapply(x[3:81],mean))
-	int<-cbind("student"=i, "activity"=levels(alldatas$activity)[j], y)
+	int<-cbind("subject"=i, "activity"=levels(alldatas$activity)[j], y)
 	final<-rbind(final,int)
 	}
 }
