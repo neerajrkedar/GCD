@@ -1,4 +1,9 @@
 Getting and Cleaning Data - Course Project
+
+Summary
+
+The course project requires a dataset divided in to several txt files to be brought together, sorted, cleaned up and summarised in order to produce a final tidy dataset.
+
 Step by step
 1. Read the txt files in to R objects. The data is now in 8 different data frames.
 2. Merge columns of test data files in to one data frame. So you now have a data frame of 563 columns. Do the same with training data files.
