@@ -22,8 +22,8 @@ Step by step
 
 8. Extract subset of data frame by column names which include the string 'mean' and 'std' using function 'grep'. Since this step eliminates columns 1 and 2, create a new data frame called 'alldatas' and cbind the first two columns of 'alldata' on to new data frame.
 
-9. To complete the final step, it is important to extract the proper subset of the data frame 'alldatas' so as to calculate means. For this purpose, the activity column is converted to six factor levels. The data frame must be subset based on subject id and activity id taken together. In this step a data frame is created for a particular subject id and particular activity.
+9. To complete the final step, it is important to extract the proper subset of the data frame 'alldatas' so as to calculate means. For this purpose, the activity column is converted to six factor levels. The data frame must be subset based on subject id and activity id taken together.
 
-10. The column means are calculated using lapply and further, using cbind and rbind the relevant data frame called 'final' is created.
+10. In two 'for' loops (one within the other), subset data frames corresponding to a partcular subject and particular activity are extracted, means of columns calculated and the resulting data frame appended to itself to create the output data frame called 'final'.
 
 11. The last step in the process is to rename the column names of 'final' according to tidy data requirements. Camelcase is used in naming variables to improve readability.
