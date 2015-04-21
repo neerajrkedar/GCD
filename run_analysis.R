@@ -29,7 +29,8 @@ alldata$activity<-gsub("4","sitting",alldata$activity)
 alldata$activity<-gsub("5","standing",alldata$activity)
 alldata$activity<-gsub("6","laying",alldata$activity)
 
-##Rename columns 3-563 of to correspond with 561 entries in features.txt
+##Rename columns 3-563 of the data frame to correspond with 561
+##entries in features.txt
 colnames(alldata)[3:563]<-as.character(features[,2])
 
 ##Extract subset of data frame by column names which include the
