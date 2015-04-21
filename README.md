@@ -26,4 +26,4 @@ Step by step
 
 10. The column means are calculated using lapply and further, using cbind and rbind the relevant data frame called 'final' is created.
 
-11. The last step in the process is to rename the column names of 'final' according to tidy data requirements. Camelcase is used in naming variables.
+11. The last step in the process is to rename the column names of 'final' according to tidy data requirements. Camelcase is used in naming variables to improve readability.
